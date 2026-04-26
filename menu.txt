@@ -1,0 +1,10 @@
+bowley.py
+skew_kurtosis.py
+univariate.py
+multivariate.py
+normal_distribution.py
+poisson_distribution.py
+z_test.py
+outlier.py
+performance_eval.py
+arima.py
