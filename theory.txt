@@ -1,7 +1,9 @@
 **BOWLEY**
+
 Bowley’s Skewness is a statistical measure used to determine the asymmetry of a distribution based on quartiles. Unlike other skewness measures (like Karl Pearson’s), Bowley’s method relies on positional values (quartiles), making it especially useful for open-ended distributions or datasets with extreme values (outliers).
 
 Skewness refers to the degree and direction of asymmetry in a dataset.
+
 - Symmetrical Distribution → Left side = Right side
 - Positively Skewed (Right-skewed) → Tail extends to the right
 - Negatively Skewed (Left-skewed) → Tail extends to the left
@@ -44,6 +46,7 @@ When full distribution characteristics are required.
 
 
 **Skewness and Kurtosis**
+
 Skewness and kurtosis are two important statistical measures used to describe the shape of a data distribution. While measures like mean and standard deviation tell us about the center and spread, skewness and kurtosis provide deeper insight into the structure and behavior of data.
 
 Skewness
@@ -101,9 +104,11 @@ comparison.
 
 
 **Univariate Data Analysis**
+
 Univariate data analysis means analyzing only one variable at a time. It is used to understand the distribution, central tendency, and spread of a single dataset. It helps in summarizing and visualizing data clearly.
 
 Histogram
+
 A histogram is a graphical representation used to display the frequency distribution of a continuous numerical variable. In a histogram, the entire range of data is divided into equal intervals called bins, and each bin represents the number of data points falling within that range. 
 X-axis → Class intervals (bins)
 Y-axis → Frequency
@@ -111,6 +116,7 @@ Y-axis → Frequency
 The bars in a histogram are adjacent to each other without gaps because the data is continuous. The height of each bar represents frequency or count. A histogram helps in understanding the shape of the data distribution, such as whether it is symmetric, skewed to the left or right, or follows a normal distribution. It is also useful for identifying the spread of data and detecting outliers or unusual patterns in the dataset.
 
 Quartiles
+
 Quartiles are statistical values that divide a sorted dataset into four equal parts, each containing 25% of the data. 
 The first quartile (Q1) represents the value below which 25% of the data lies. 
 The second quartile (Q2) is the median, which divides the dataset into two equal halves, representing the 50th percentile. 
@@ -124,6 +130,7 @@ IQR=Q3−Q1
 
 
 Distribution Chart
+
 • The normal distribution is also called the Gaussian distribution or “bell curve” due to its 
 bell shape. The normal distribution function shows the probability of occurrence of a data 
 point within a range of values. 
@@ -135,6 +142,7 @@ can be gained.
 
 
 **Multivariate data Analysis**
+
 Multivariate data analysis refers to the study of two or more variables at the same time to understand the relationship, interaction, and dependency between them. 
 It is used when a dataset contains multiple features that may influence each other. 
 This type of analysis helps in finding patterns, correlations, and trends that cannot be observed by studying a single variable. It is widely used in data science, machine learning, and statistical modeling.
@@ -154,6 +162,7 @@ A density plot shows the distribution of a continuous variable using a smooth cu
 
 
 **Normal Distribution**
+
 Normal distribution, also called the Gaussian distribution, is a type of continuous probability distribution in which the data is symmetrically distributed around the mean. Most of the values cluster around the central value, and fewer values occur as we move away from the mean. It forms a bell-shaped curve, which is why it is often called the bell curve. Many real-world variables such as heights, weights, and exam scores follow a normal distribution.
 
 Formula:
@@ -175,6 +184,7 @@ This rule helps in understanding how data is spread around the mean.
 
 
 **Poisson Distribution**
+
 Poisson distribution is a type of discrete probability distribution that is used to model the number of times an event occurs in a fixed interval of time, space, or area. 
 It is applicable when events occur independently and at a constant average rate. 
 It is commonly used to count rare events such as number of accidents, number of phone calls, or number of defects in a product.
@@ -199,6 +209,7 @@ If the average number of accidents in a factory is 5 per month, Poisson distribu
 
 
 **Z-Test**
+
 A Z-test is a statistical hypothesis test used to determine whether there is a significant difference between sample data and a population parameter (such as mean or proportion). It is mainly used when the sample size is large (n ≥ 30) or when the population variance is known. The test is based on the standard normal distribution.
 The main purpose of the Z-test is to check whether the observed difference between the sample and population is due to chance or represents a real effect. It is used in decision-making and hypothesis testing to accept or reject the null hypothesis.
 
@@ -210,6 +221,7 @@ X = sample mean
 n = sample size
 
 Steps in Performing Z-Test
+
 Formulate the null hypothesis (H₀) and alternative hypothesis (H₁).
 Select the level of significance (α), usually 0.05.
 Calculate the Z-value using the formula.
@@ -218,6 +230,7 @@ Compare the calculated value with the critical value.
 If |Z| is greater than the critical value, reject H₀; otherwise, accept H₀.
 
 Assumptions of Z-Test
+
 Sample size should be large (n ≥ 30)
 Data should be normally distributed or approximately normal
 Population variance is known
