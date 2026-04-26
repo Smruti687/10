@@ -242,3 +242,79 @@ Z-test is simple and easy to apply when assumptions are satisfied. It provides q
 
 
 **Outlier Detection**
+Outlier detection is the process of identifying data points that are significantly different from the rest of the data. These unusual values are called outliers. 
+Outliers may occur due to errors in data collection, measurement issues, or natural variations in the dataset. Detecting outliers is important because they can affect statistical analysis, machine learning models, and overall data interpretation.
+
+Detection Techniques 
+▪ Outlier Detection Using Statistical Methods 
+▪ Outlier Detection Using Data Science
+
+
+Outlier Detection Using Statistical Methods
+•	Outliers in the data can be identified by creating a statistical distribution model of the data and identifying the data points that do not fit into the model or data points that occupy the ends of the distribution tails.
+•	Many real-world datasets follow a Gaussian (normal) distribution, which can be defined using mean and standard deviation.
+•	The parameters for building a normal distribution (i.e., mean and standard deviation) can be estimated from the dataset and a normal distribution curve can be created 
+•	Outliers can be detected based on where the data points fall in the standard normal distribution curve. 
+•	Example: A threshold for classifying an outlier can be specified, say, three standard deviations from the mean. Any data point that is more than three standard deviations is identified as an outlier.
+
+
+Outlier Detection Using Data Science
+Outliers exhibit a certain set of characteristics that can be exploited to find them. Following are classes of techniques that were developed to identify outliers by using their unique characteristics.
+Each of these techniques has multiple parameters and, hence, a data point labeled as an outlier in one algorithm may not be an outlier to another.
+1.	Distance-based:
+By nature, outliers are different from other data objects in the dataset. In multidimensional Cartesian space they are distant from other data points. If the average distance of the nearest N neighbors is measured, the outliers will have a higher value than other normal data points. Distance-based algorithms utilize this property to identify outliers in the data.
+2.	Density-based:
+The density of a data point in a neighborhood is inversely related to the distance to its neighbors. Outliers occupy low-density areas while the regular data points congregate in high-density areas. This is derived from the fact that the relative occurrence of an outlier is low compared with the frequency of normal data points.
+
+3.	Distribution-based:
+Outliers are the data points that have a low probability of occurrence and they occupy the tail ends of the distribution curve. If one tries to fit the dataset in a statistical distribution, these anomalous data points will stand out and can be identified. A simple normal distribution can be used to model the dataset by calculating the mean and standard deviation.
+
+4.	Clustering:
+Outliers by definition are not similar to normal data points in a dataset. They are rare data points far away from regular data points and generally do not form a tight cluster. Since most clustering algorithms have a minimum threshold of data points to form a cluster, the outliers are the lone data points that are not clustered. Even if outliers form a cluster, they are far away from other clusters.
+
+
+
+**Performance Evaluation**
+Performance evaluation is the process of measuring how well a model or system performs on a given dataset. In data science and machine learning, it is used to assess how accurately a model predicts outcomes. It helps in understanding whether the model is reliable, efficient, and suitable for real-world applications.
+It helps in determining the accuracy, reliability, and efficiency of the model before deploying it in real-world applications.
+Performance evaluation is important because it helps in selecting the best model among different models. It ensures that the model is not making too many errors and can generalize well to new data. It also helps in identifying problems such as overfitting and underfitting, thereby improving model performance.
+
+1) Root Mean Squared Error (RMSE)
+RMSE is a commonly used metric to evaluate the performance of regression models.
+It measures the average magnitude of error between predicted and actual values.
+It gives higher weight to larger errors by squaring the differences before averaging them.
+This means models with large prediction errors are penalized more heavily.
+Formula:
+RMSE=sqrt(mean(e^2)
+
+2) Mean Absolute Percentage Error (MAPE)
+Measures accuracy of forecasting models in percentage terms.
+Calculates the average of absolute percentage errors between actual and predicted values.
+Formula:
+MAPE=mean(∣pi∣)
+Where:
+pi = 100ei/yi
+
+3) Mean Absolute Scaled Error (MASE)
+MASE is a scale-independent metric used to evaluate forecasting models.
+It improves upon MAPE by comparing model errors with a naïve forecasting method.
+Interpretation:
+MASE < 1 → Model performs better than naïve forecast
+MASE = 1 → Model performs same as naïve forecast
+MASE > 1 → Model performs worse than naïve forecast
+
+4) Mean Absolute Error (MAE)
+MAE is a commonly used metric to evaluate the performance of regression models.
+It measures the average of absolute differences between predicted and actual values.
+Unlike RMSE, it does not square the errors, so all errors are treated equally.
+It is easy to understand and interpret.
+
+MAE=​∑∣yi​−ycap​i​∣/n
+
+yi = Actual value
+y^i = Predicted value
+n = Number of observations
+
+	​
+
+	​
