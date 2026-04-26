@@ -1,0 +1,231 @@
+**BOWLEY**
+Bowley’s Skewness is a statistical measure used to determine the asymmetry of a distribution based on quartiles. Unlike other skewness measures (like Karl Pearson’s), Bowley’s method relies on positional values (quartiles), making it especially useful for open-ended distributions or datasets with extreme values (outliers).
+
+Skewness refers to the degree and direction of asymmetry in a dataset.
+- Symmetrical Distribution → Left side = Right side
+- Positively Skewed (Right-skewed) → Tail extends to the right
+- Negatively Skewed (Left-skewed) → Tail extends to the left
+Bowley’s skewness helps quantify this asymmetry using quartiles.
+
+Quartiles divide data into four equal parts:
+Q1 (First Quartile) → 25% of data lies below it
+Q2 (Median) → 50% of data lies below it
+Q3 (Third Quartile) → 75% of data lies below it
+These quartiles form the foundation of Bowley’s skewness.
+
+Formula of Bowley’s Skewness
+Sk​=(Q3​+Q1​−2Q2​)​/(Q3​−Q1​)
+
+Interpretation of Bowley’s Skewness
+Sk = 0 → Distribution is perfectly symmetrical i.e. Q1, Q2, Q3 are evenly spaced
+Sk > 0 → Positively skewed (long right tail) - Median shifts toward Q1
+Sk < 0 → Negatively skewed (long left tail) - Median shifts toward Q3
+Range:
+Bowley’s skewness lies between -1 and +1
+
+Advantages of Bowley’s Skewness
+Robust to Outliers
+Since it uses quartiles, extreme values don’t affect it much.
+Suitable for Open-Ended Classes
+Works well when class intervals are incomplete.
+Simple to Understand
+Easy to compute and interpret.
+Useful for Ordinal Data
+Can be applied when only ranking is known.
+
+Limitations
+Ignores Extreme Values Completely
+It only considers the middle 50% of data.
+Less Precise
+Compared to moment-based measures.
+Not Suitable for Detailed Analysis
+When full distribution characteristics are required.
+
+
+
+**Skewness and Kurtosis**
+Skewness and kurtosis are two important statistical measures used to describe the shape of a data distribution. While measures like mean and standard deviation tell us about the center and spread, skewness and kurtosis provide deeper insight into the structure and behavior of data.
+
+Skewness
+Skewness measures the degree of asymmetry of a distribution around its mean.
+If data is evenly distributed → Symmetrical
+If one tail is longer → Skewed
+
+Types of Skewness
+1. Symmetrical Distribution
+Left side = Right side
+Mean = Median = Mode
+Skewness = 0
+2. Positive Skewness (Right-Skewed)
+Tail extends to the right
+Mean > Median > Mode
+Few large values pull the mean upward
+Example: Income distribution
+3. Negative Skewness (Left-Skewed)
+Tail extends to the left
+Mean < Median < Mode
+Few small values pull the mean downward
+Example: Easy exam scores
+
+Interpretation
+Skewness = 0 → Symmetrical
+Skewness > 0 → Positively skewed
+Skewness < 0 → Negatively skewed
+
+
+Kurtosis
+Kurtosis measures the “peakedness” or “tailedness” of a distribution.
+Kurtosis is another measure of the shape of a frequency curve. It is a Greek word, which 
+means bulginess. 
+
+It tells us:
+How sharp the peak is
+How heavy or light the tails are
+
+Interpretation
+High kurtosis → Extreme values (outliers) likely
+Low kurtosis → Data more evenly spread
+Normal kurtosis → Balanced distribution
+
+ 
+• While skewness signifies the extent of asymmetry, kurtosis measures the degree of 
+peakedness of a frequency distribution. 
+• Karl Pearson classified curves into three types on the basis of the shape of their peaks. These 
+are:- – Leptokurtic – Mesokurtic – Platykurtic 
+• When the peak of a curve becomes relatively high then that curve is called Leptokurtic. 
+• When the curve is flat−topped, then it is called Platykurtic. 
+• Since normal curve is neither very peaked nor very flat topped, so it is taken as a basis for 
+comparison. 
+• This normal curve is called Mesokurtic.
+
+
+
+**Univariate Data Analysis**
+Univariate data analysis means analyzing only one variable at a time. It is used to understand the distribution, central tendency, and spread of a single dataset. It helps in summarizing and visualizing data clearly.
+
+Histogram
+A histogram is a graphical representation used to display the frequency distribution of a continuous numerical variable. In a histogram, the entire range of data is divided into equal intervals called bins, and each bin represents the number of data points falling within that range. 
+X-axis → Class intervals (bins)
+Y-axis → Frequency
+
+The bars in a histogram are adjacent to each other without gaps because the data is continuous. The height of each bar represents frequency or count. A histogram helps in understanding the shape of the data distribution, such as whether it is symmetric, skewed to the left or right, or follows a normal distribution. It is also useful for identifying the spread of data and detecting outliers or unusual patterns in the dataset.
+
+Quartiles
+Quartiles are statistical values that divide a sorted dataset into four equal parts, each containing 25% of the data. 
+The first quartile (Q1) represents the value below which 25% of the data lies. 
+The second quartile (Q2) is the median, which divides the dataset into two equal halves, representing the 50th percentile. 
+The third quartile (Q3) represents the value below which 75% of the data lies. Quartiles are very useful in understanding the distribution and spread of data. 
+They help in identifying how data is spread around the median and are widely used in constructing box plots. The difference between Q3 and Q1 is called the interquartile range (IQR), which measures the middle 50% spread of data and is also used to detect outliers.
+
+Q1=(n+1)/4​,
+Q2=(n+1)/2​,
+Q3=3(n+1)/​4
+IQR=Q3−Q1
+
+
+Distribution Chart
+• The normal distribution is also called the Gaussian distribution or “bell curve” due to its 
+bell shape. The normal distribution function shows the probability of occurrence of a data 
+point within a range of values. 
+• If a dataset exhibits normal distribution, then 68.2% of data points will fall within one 
+standard deviation from the mean; 95.4% of the points will fall within 2σ and 99.7% within 
+3σ of the mean. 
+• When the normal distribution curves are stratified by class type, more insight into the data 
+can be gained. 
+
+
+**Multivariate data Analysis**
+Multivariate data analysis refers to the study of two or more variables at the same time to understand the relationship, interaction, and dependency between them. 
+It is used when a dataset contains multiple features that may influence each other. 
+This type of analysis helps in finding patterns, correlations, and trends that cannot be observed by studying a single variable. It is widely used in data science, machine learning, and statistical modeling.
+
+Scatter Plot
+A scatter plot is a graphical representation used to show the relationship between two numerical variables. Each point in the graph represents one observation in the dataset. The position of the point is determined by the values of the two variables on the X-axis and Y-axis. Scatter plots help in identifying whether there is a positive correlation, negative correlation, or no relationship between variables. They are also useful for detecting outliers and understanding data distribution patterns
+
+Bubble Plot
+A bubble plot is an extension of a scatter plot where a third variable is added using the size of the bubble. The X-axis and Y-axis represent two variables, while the size of each bubble represents another numerical variable. This allows visualization of three dimensions of data in a single graph. Bubble plots are useful in comparing multiple factors together, such as sales, profit, and quantity in business data. They help in understanding relationships between multiple variables at once.
+
+Scatter Matrix (Pair Plot)
+A scatter matrix, also known as a pair plot, is used to visualize relationships between multiple pairs of variables in a dataset. It creates a grid of scatter plots where each variable is plotted against every other variable. The diagonal usually shows the distribution of individual variables using histograms or density plots. Scatter matrices help in understanding correlations between all features in a dataset and are widely used in exploratory data analysis before building machine learning models.
+
+Density Plot
+A density plot shows the distribution of a continuous variable using a smooth curve. It is similar to a histogram but provides a more smooth and continuous representation of data distribution. Density plots help in understanding how data is spread and where it is concentrated. When multiple variables are used, density plots can show overlapping distributions, making it easier to compare different groups. It is useful for identifying patterns such as skewness, multimodal distribution, and central tendency.
+
+
+
+**Normal Distribution**
+Normal distribution, also called the Gaussian distribution, is a type of continuous probability distribution in which the data is symmetrically distributed around the mean. Most of the values cluster around the central value, and fewer values occur as we move away from the mean. It forms a bell-shaped curve, which is why it is often called the bell curve. Many real-world variables such as heights, weights, and exam scores follow a normal distribution.
+
+Formula:
+Z=X−μ​/σ
+μ = mean (average value)
+σ = standard deviation (spread of data)
+x = data value
+
+Shape of the Curve
+The normal distribution curve is bell-shaped, where the highest point represents the mean. As we move away from the center, the curve gradually decreases on both sides. The width of the curve depends on the standard deviation. A smaller standard deviation results in a narrow and tall curve, while a larger standard deviation results in a wider and flatter curve.
+
+Empirical Rule (68–95–99.7 Rule)
+The empirical rule describes how data is distributed in a normal distribution:
+About 68% of data lies within ±1 standard deviation from the mean
+About 95% of data lies within ±2 standard deviations
+About 99.7% of data lies within ±3 standard deviations
+This rule helps in understanding how data is spread around the mean.
+
+
+
+**Poisson Distribution**
+Poisson distribution is a type of discrete probability distribution that is used to model the number of times an event occurs in a fixed interval of time, space, or area. 
+It is applicable when events occur independently and at a constant average rate. 
+It is commonly used to count rare events such as number of accidents, number of phone calls, or number of defects in a product.
+
+P(X=x)=e^(−λ)*λ^x​/x!
+λ (lambda) = average number of occurrences
+x = number of events (0, 1, 2, …)
+e = Euler’s constant (≈ 2.718)
+
+For Poisson distribution:
+Mean (μ) = λ
+Variance (σ²) = λ
+This means the average and spread of the data are the same.
+
+
+Applications of Poisson Distribution
+Poisson distribution is widely used in real-life situations where events occur randomly over time or space. It is used in traffic analysis, call center management, quality control, and reliability engineering. For example, it can be used to find the probability of receiving a certain number of calls in an hour or the number of defects in a batch of products.
+
+Example
+If the average number of accidents in a factory is 5 per month, Poisson distribution can be used to find the probability of exactly 3 accidents occurring in a month.
+
+
+
+**Z-Test**
+A Z-test is a statistical hypothesis test used to determine whether there is a significant difference between sample data and a population parameter (such as mean or proportion). It is mainly used when the sample size is large (n ≥ 30) or when the population variance is known. The test is based on the standard normal distribution.
+The main purpose of the Z-test is to check whether the observed difference between the sample and population is due to chance or represents a real effect. It is used in decision-making and hypothesis testing to accept or reject the null hypothesis.
+
+Z=Xˉ−μ/ σ/sqrt(n)
+Where:
+X = sample mean
+μ = population mean
+σ = population standard deviation
+n = sample size
+
+Steps in Performing Z-Test
+Formulate the null hypothesis (H₀) and alternative hypothesis (H₁).
+Select the level of significance (α), usually 0.05.
+Calculate the Z-value using the formula.
+Determine the critical Z-value from standard normal tables or calculate the p-value.
+Compare the calculated value with the critical value.
+If |Z| is greater than the critical value, reject H₀; otherwise, accept H₀.
+
+Assumptions of Z-Test
+Sample size should be large (n ≥ 30)
+Data should be normally distributed or approximately normal
+Population variance is known
+Observations are independent
+
+Advantages of Z-Test
+Z-test is simple and easy to apply when assumptions are satisfied. It provides quick results and is suitable for large sample sizes. It is widely used because of its strong theoretical foundation in normal distribution.​
+
+
+
+**Outlier Detection**
