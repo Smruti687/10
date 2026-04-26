@@ -1,6 +1,7 @@
 **BOWLEY**
 
-Bowley’s Skewness is a statistical measure used to determine the asymmetry of a distribution based on quartiles. Unlike other skewness measures (like Karl Pearson’s), Bowley’s method relies on positional values (quartiles), making it especially useful for open-ended distributions or datasets with extreme values (outliers).
+Bowley’s Skewness is a statistical measure used to determine the asymmetry of a distribution based on quartiles. 
+Unlike other skewness measures (like Karl Pearson’s), Bowley’s method relies on positional values (quartiles), making it especially useful for open-ended distributions or datasets with extreme values (outliers).
 
 Skewness refers to the degree and direction of asymmetry in a dataset.
 
