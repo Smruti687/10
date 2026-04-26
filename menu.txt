@@ -8,3 +8,4 @@ z_test.py
 outlier.py
 performance_eval.py
 arima.py
+theory.txt
